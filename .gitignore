@@ -1,3 +1,7 @@
 *.pdf
 *.log
 *.ini
+*.synctex
+*.tps
+*.out
+*.toc
