@@ -1,9 +1,0 @@
-\select@language {ngerman}
-\contentsline {section}{Historie der Dokumentversionen}{2}{section*.1}
-\contentsline {section}{\numberline {1}Einf\"uhrung}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Aufgabenstellung}{3}{subsection.1.1}
-\contentsline {section}{\numberline {2}Architektur\"uberblick}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}Technologien}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Flightradar24.com API}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}AWS-Dienste}{4}{subsection.2.3}
-\contentsline {section}{\numberline {3}Funktionalit\"at des Systems}{5}{section.3}
