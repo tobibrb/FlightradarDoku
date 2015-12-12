@@ -1,0 +1,61 @@
+\documentclass[ngerman, oneside]{article}
+
+\usepackage[latin1]{inputenc} % Zeichensatz, ermöglicht die direkte Eingabe von Umlauten im Editor
+\usepackage[ngerman]{babel}   % Silbentrennung nach der neuen deutschen Rechtschreibung, z.B.: Sys-tem
+\usepackage{setspace}
+\usepackage[footnote]{acronym}%für Abkürzungsverzeichnis
+\usepackage[pdftex]{graphicx} % Einbindung von Grafiken (pdf, png, jpg)
+\usepackage{pdfpages}         % für die Einbindung kompletter pdf-*Seiten*
+\usepackage{float}						%um Bilder genau zu positionieren: ... \begin{figure}[H] ...
+\usepackage{xcolor}						%für Bunt!
+\usepackage{varioref}%für interne verweise
+\usepackage[
+colorlinks, %farbige links
+linkcolor={blue!50!black},
+citecolor={blue!50!black},
+filecolor={blue!50!black},
+pagecolor={blue!50!black},
+urlcolor={blue!50!black},
+hyperfootnodes
+]{hyperref}%für interne verweise
+\usepackage{cleveref}%für interne verweise
+\usepackage[babel,german=quotes]{csquotes} %deutsche anführungszeichen
+%\usepackage[showframe]{geometry} %debug
+\usepackage[numbers]{natbib}%für Literaturverzeichnis
+%%	WICHTIG:
+%%-Bei Labels und Dateinamen Umlaute vermeiden
+%%-Ausgelagerte Texte mit ANSI kodiert abspeichern
+\begin{document}
+
+\input{Sections/Title}
+
+\tableofcontents
+\clearpage
+\addcontentsline{toc}{section}{Historie der Dokumentversionen}
+\section*{Historie der Dokumentversionen}
+\label{sec:HistorieDerDokumentversionen}
+
+
+\begin{table}[hp]
+	\centering
+		\begin{tabular}{l c c p{8cm}}
+			Version & Datum & Autor/en & Änderungsgrund/Bemerkungen\\\hline
+			0.1			& 12.12.15& Bartz & Anlegen und formatieren des Dokumentes\\
+			\end{tabular}
+	\label{Historie der Dokumentversionen}
+\end{table}
+
+\clearpage
+
+\input{Sections/Einfuehrung}
+
+\clearpage
+
+\input{Sections/Architekturueberblick}
+
+\clearpage
+
+\input{Sections/FunktionalitaetdesSystems}
+
+
+\end{document}
