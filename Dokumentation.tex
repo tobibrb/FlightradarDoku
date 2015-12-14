@@ -25,26 +25,14 @@ hyperfootnodes
 %%	WICHTIG:
 %%-Bei Labels und Dateinamen Umlaute vermeiden
 %%-Ausgelagerte Texte mit ANSI kodiert abspeichern
+\usepackage{geometry}
+\geometry{a4paper, top=25mm, left=40mm, right=25mm, bottom=30mm, headsep=10mm, footskip=12mm}
+
 \begin{document}
 
 \input{Sections/Title}
 
 \tableofcontents
-\clearpage
-\addcontentsline{toc}{section}{Historie der Dokumentversionen}
-\section*{Historie der Dokumentversionen}
-\label{sec:HistorieDerDokumentversionen}
-
-
-\begin{table}[hp]
-	\centering
-		\begin{tabular}{l c c p{8cm}}
-			Version & Datum & Autor/en & Änderungsgrund/Bemerkungen\\\hline
-			0.1			& 12.12.15& Bartz & Anlegen und formatieren des Dokumentes\\
-			\end{tabular}
-	\label{Historie der Dokumentversionen}
-\end{table}
-
 \clearpage
 
 \input{Sections/Einfuehrung}

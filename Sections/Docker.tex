@@ -1,0 +1,8 @@
+In dieser Anwendung wird durch Travis CI automatisch ein Docker Container erzeugt. Dieser wird als Image auf der Plattform "`Docker Hub"' zur Verfügung gestellt. Docker Hub stellt dabei die Registry für das Repository bereit. Die aktuellste Version des Docker Images kann mit folgendem Befehl auf einen Host mit Docker heruntergeladen werden:
+\begin{center}
+	\verb+docker pull cronjoe/flightradar+
+\end{center}}
+Der Docker Container enthält eine lauffähige Version der Anwendung. Der Container kann mit folgendem Befehl gestartet werden:
+\begin{center}
+	\verb+docker run --rm -i -t -p 8080:8080 cronjoe/flightradar+
+\end{center}}
