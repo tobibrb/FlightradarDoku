@@ -8,7 +8,8 @@ Die Anwendung wird über eine \verb+REST+-Schnittstelle verwendet. Im folgenden i
 Der Queryparameter \verb+airport+ ist optional, d.h. wird er nicht angegeben bekommt der Nutzer nach seiner Validierung alle Flüge, welche sich zurzeit über Berlin und Brandenburg befinden. Wird ein \verb+airport+ angegeben so bekommt der Nutzer später nur jene Flüge, welche den entsprechenden Flughafen als Start oder Ziel haben. Als Wert für diesen Parameter ist die internationale Kennung der Flughäfen zu benutzen z.B. TXL für Berlin Tegel oder SXF für Berlin Schönefeld.
 Nach dem der Nutzer seine Email Adresse registriert hat, bekommt er eine Email an jene Adresse. In dieser befindet sich dann eine Hyperlink für die Validierung dieser Adresse. Der Linkt hat folgendes Format:
 \begin{center}
-	\url{http://<host>:8080/flight-radar/sub-email/validate?uuid=02aff3e4-4223-434f-bc7c-8ff7bb57d90b}
+	\verb+http://<host>:8080/flight-radar/sub-email/+
+	\verb+validate?uuid=02aff3e4-4223-434f-bc7c-8ff7bb57d90b+
 \end{center} 
 wobei der Parameter \verb+uuid+ vom System erstellt wird und keine weitere Bedeutung für den Nutzer hat. Nach der erfolgreichen Registrierung erhält der Nutzer ca. alle 30 Minuten eine Email, wenn für ihn relevante Flüge in der Datenbank enthalten sind.
 Dem Nutzer ist es möglich die Auswahl der Flughäfen nachträglich zu ändern. Hier für ist es notwendig das er die Registrierung nochmals durchläuft nur dies mal mit anderen Parametern für \verb+airport+. Es ist möglich auch mehrere Flughäfen anzugeben. Z.B. so:
