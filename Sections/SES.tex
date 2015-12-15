@@ -1,0 +1,9 @@
+Zum versenden der Email Benachrichtigungen wird ein Simple Email Service(SES) von AWS benutzt. In der Anwendung werden da drüber die Emails zu Registrierung versand, sowie die Daten der Flugzeuge. Der SES läuft bei AWS in einer Sandbox und somit ist es nur möglich Emails an dort validierte Email Adressen zusenden. Für einen betrieb außerhalb der Sandbox fordert AWS ein \verb+Bounce und Complaints Management+. Darauf wurde in dieser Implementierung jedoch verzichtet. Somit wurde eine Test Email Adresse bei gmail.com eingerichtet. Diese ist bei dem SES Service hinterlegt und kann für die Registrierung bei der Anwendung verwendet werden. 
+\begin{table}[hp]
+			\centering
+			\renewcommand{\arraystretch}{1,5}%größerer Zeilenabstand
+				\begin{tabular}{ l l }%linke spalte linksbündig | mittlere Spalte zentriert | rechte Spalte rechtsbündig
+					Email: &\verb+flightradartu@gmail.com+\\ 
+					Passwort: &\verb+larsansthomas+
+				\end{tabular}
+		\end{table}
